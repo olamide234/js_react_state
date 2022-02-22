@@ -1,0 +1,14 @@
+state in web application
+how to model state in react application
+how to initialize state and set it
+using events to trigger state changes
+in any sufficient advanced web application, the user interface has to be stateful
+state is not always tied to what's happening on the server side
+state tracks :
+-UI logic 
+-business logic i.e the changing state of data e.g in my inbox, messages read or unread, inturn affects how they display
+
+In React, state is an instance attribute on a component. It's always an object
+To use state, it should be initialized as soon as the component is created
+If component is stateless, one can omit the constructor function
+If building a component with state, one need a standard React constructor (class)

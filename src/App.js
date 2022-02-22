@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React, { Component } from 'react'
 import './App.css';
+import Game from "./Game"
+import Demo from "./Demo"
+import Rando from "./Rando"
+import Button from "./Button"
+import BrokenClick from "./BrokenClick"
+import Clicker from "./Clicker"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        {/* <Game/>
+        <Demo animal="Bobcat" food="pineapple"/>
+        <Rando maxNum={7}/>
+        <Button/><br/>
+        <BrokenClick/> */}
+        <Clicker/>
+      </div>
+    )
+  }
 }
 
-export default App;
